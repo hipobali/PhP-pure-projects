@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<div id="circle">Welcome</div>
+
+<button type="button" id="btn1">Hide</button>
+<button type="button" id="btn2">Show</button>
+<button type="button" id="btn3">Toggle</button>
+
+
+
+
+
+<script src="jquery.js"></script>
+<script>
+    var aa=$("#circle");
+    aa.css({
+        width:"200px",
+        height:"200px",
+        borderRadius:"200px",
+        background:"black",
+        color:"red",
+        textAlign:"center",
+        lineHeight:"200px",
+
+    });
+    var a=$("#btn1");
+    a.click(function () {
+        aa.hide("700");
+
+    });
+    var b=$("#btn2");
+    b.click(function () {
+        aa.show();
+
+    });
+    var c=$("#btn3")
+    c.click(function () {
+        aa.toggle("slow");
+
+    });
+</script>
+</body>
+</html>

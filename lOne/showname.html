@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h1 id="showText">show name here</h1>
+<input type="text" onchange="getName()" id="name" placeholder="Enter something">
+<script>
+    function getName() {
+        var name=document.getElementById("name").value;
+        var show=document.getElementById("showText");
+        show.innerHTML=name;
+    }
+</script>
+</body>
+</html>

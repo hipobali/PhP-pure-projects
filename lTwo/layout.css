@@ -1,0 +1,39 @@
+.container{
+    width:900px;
+    margin: 20px auto;
+}
+ .header,.footer{
+    height: 100px;
+    width: 100%;
+     background: blue;
+    text-align: center;
+    line-height:100px;
+    font-size: 30px;
+
+}
+.content{
+    display: flex;
+    height:200px;
+}
+.left-side,.right-side{
+    width:200px;
+    background: red;
+    line-height:200px;
+
+
+}
+.content,.center-article{
+    background: green;
+    text-align: center;
+    flex-grow: 1;
+    line-height: 200px;
+}
+.header:hover{
+    background: blue;
+}
+.footer:hover{
+    background:green;
+}
+.center-article:hover{
+    background: red;
+}

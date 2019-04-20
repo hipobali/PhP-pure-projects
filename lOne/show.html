@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h1 id="showText">show Here</h1>
+<input type="text" id="name" placeholder="Enter your name">
+<button type="button" onclick="Click()">Click here</button>
+
+
+
+<script>
+    function Click(){
+        var name=document.getElementById("name").value;
+        var showText=document.getElementById("showText");
+        showText.innerHTML=name;
+    }
+</script>
+</body>
+</html>
